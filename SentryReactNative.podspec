@@ -18,8 +18,7 @@ Pod::Spec.new do |s|
   s.preserve_paths = '*.js'
 
   s.dependency 'React'
-  # s.dependency 'jessestuart-Sentry', :git => 'https://github.com/jessestuart/sentry-cocoa.git', branch: package['version']
-  s.dependency 'Sentry', '~> 4.1.4', :git => 'https://github.com/jessestuart/sentry-cocoa'
+  s.dependency 'jessestuart-Sentry'
 
   s.source_files = 'ios/RNSentry*.{h,m}'
   s.public_header_files = 'ios/RNSentry.h'

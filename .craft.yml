@@ -1,6 +1,6 @@
 minVersion: '0.6.0'
 github:
-  owner: getsentry
+  owner: jessestuart
   repo: react-native-sentry
 changelogPolicy: simple
 preReleaseCommand: bash scripts/craft-pre-release.sh
