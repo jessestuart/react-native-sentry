@@ -1,8 +1,8 @@
 {
-  "name": "react-native-sentry",
+  "name": "@jesses/react-native-sentry",
   "homepage": "https://github.com/getsentry/react-native-sentry",
   "repository": "https://github.com/getsentry/react-native-sentry",
-  "version": "0.40.2",
+  "version": "0.40.4",
   "description": "Official Sentry SDK for react-native",
   "typings": "lib/Sentry.d.ts",
   "typescript": {
@@ -12,14 +12,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "precommit": "lint-staged",
-    "test:typescript": "node_modules/typescript/bin/tsc --noImplicitAny --allowJs typescript/Sentry-tests.ts"
+    "test:typescript":
+      "node_modules/typescript/bin/tsc --noImplicitAny --allowJs typescript/Sentry-tests.ts"
   },
-  "keywords": [
-    "react-native",
-    "sentry",
-    "crashreporting",
-    "ios"
-  ],
+  "keywords": ["react-native", "sentry", "crashreporting", "ios"],
   "author": "Sentry",
   "license": "MIT",
   "peerDependencies": {
@@ -31,16 +27,16 @@
   },
   "rnpm": {
     "commands": {
-      "postlink": "node node_modules/@sentry/wizard/dist/bin.js -i reactNative -p ios android",
-      "postunlink": "node node_modules/@sentry/wizard/dist/bin.js -i reactNative -p ios android --uninstall"
+      "postlink":
+        "node node_modules/@sentry/wizard/dist/bin.js -i reactNative -p ios android",
+      "postunlink":
+        "node node_modules/@sentry/wizard/dist/bin.js -i reactNative -p ios android --uninstall"
     },
     "android": {
       "packageInstance": "new RNSentryPackage()"
     },
     "ios": {
-      "sharedLibraries": [
-        "libz"
-      ]
+      "sharedLibraries": ["libz"]
     }
   },
   "devDependencies": {
