@@ -1,7 +1,7 @@
 {
   "name": "@jesses/react-native-sentry",
   "description": "Official Sentry SDK for react-native",
-  "version": "0.40.13",
+  "version": "0.40.14",
   "author": "Sentry",
   "dependencies": {
     "@sentry/wizard": "^0.12.1",
